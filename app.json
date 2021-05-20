@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "taskbox",
-    "slug": "taskbox",
+    "name": "der-lokal-ui",
+    "slug": "der-lokal-ui",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
