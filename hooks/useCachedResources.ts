@@ -3,6 +3,12 @@ import * as Font from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import * as React from 'react';
 
+const NotoSansKRRegular = require('../assets/fonts/NotoSansKR-Regular.otf');
+const NotoSansKRBlack = require('../assets/fonts/NotoSansKR-Black.otf');
+const NotoSansKRBold = require('../assets/fonts/NotoSansKR-Bold.otf');
+const NotoSansKRMedium = require('../assets/fonts/NotoSansKR-Medium.otf');
+const NotoSansKRLight = require('../assets/fonts/NotoSansKR-Light.otf');
+
 export default function useCachedResources() {
   const [isLoadingComplete, setLoadingComplete] = React.useState(false);
 
@@ -15,7 +21,11 @@ export default function useCachedResources() {
         // Load fonts
         await Font.loadAsync({
           ...Ionicons.font,
-          'space-mono': require('../assets/fonts/SpaceMono-Regular.ttf'),
+          NotoSansKRRegular,
+          NotoSansKRBlack,
+          NotoSansKRBold,
+          NotoSansKRMedium,
+          NotoSansKRLight,
         });
       } catch (e) {
         // We might want to provide this error information to an error reporting service
